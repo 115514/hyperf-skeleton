@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ba9f190cbf8e98959606363b9dc3e7f",
+    "content-hash": "f2bd784cf0d89e8bec5ebbe218f02b5b",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2111,6 +2111,64 @@
             "time": "2022-03-23T07:31:49+00:00"
         },
         {
+            "name": "hyperf/model-cache",
+            "version": "v2.2.29",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/model-cache.git",
+                "reference": "9345391d5efa2cfed82769c03bdec1223d52006c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/model-cache/zipball/9345391d5efa2cfed82769c03bdec1223d52006c",
+                "reference": "9345391d5efa2cfed82769c03bdec1223d52006c",
+                "shasum": ""
+            },
+            "require": {
+                "hyperf/contract": "~2.2.0",
+                "hyperf/db-connection": "~2.2.0",
+                "hyperf/utils": "~2.2.0",
+                "php": ">=7.2",
+                "psr/container": "^1.0|^2.0",
+                "psr/simple-cache": "^1.0"
+            },
+            "suggest": {
+                "hyperf/event": "Required to use DeleteCacheListener."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\ModelCache\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\ModelCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A model cache component for hyperf.",
+            "homepage": "https://hyperf.io",
+            "keywords": [
+                "hyperf",
+                "model-cache",
+                "php"
+            ],
+            "support": {
+                "docs": "https://hyperf.wiki",
+                "issues": "https://github.com/hyperf/hyperf/issues",
+                "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                "source": "https://github.com/hyperf/hyperf"
+            },
+            "time": "2022-03-14T11:40:41+00:00"
+        },
+        {
             "name": "hyperf/model-listener",
             "version": "v2.2.14",
             "source": {
@@ -2569,6 +2627,61 @@
                 "source": "https://github.com/hyperf/hyperf"
             },
             "time": "2022-03-10T06:57:52+00:00"
+        },
+        {
+            "name": "hyperf/snowflake",
+            "version": "v2.2.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/snowflake.git",
+                "reference": "ea24c1f986af1dd893c99c506736314a87645e16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/snowflake/zipball/ea24c1f986af1dd893c99c506736314a87645e16",
+                "reference": "ea24c1f986af1dd893c99c506736314a87645e16",
+                "shasum": ""
+            },
+            "require": {
+                "hyperf/contract": "~2.2.0",
+                "php": ">=7.2"
+            },
+            "suggest": {
+                "hyperf/config": "Required to read snowflake config.",
+                "hyperf/redis": "Required to use RedisMilliSecondMetaGenerator or RedisSecondMetaGenerator.",
+                "psr/container": "Required to use MetaGeneratorFactory."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\Snowflake\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\Snowflake\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A snowflake library",
+            "homepage": "https://hyperf.io",
+            "keywords": [
+                "php",
+                "snowflake"
+            ],
+            "support": {
+                "docs": "https://hyperf.wiki",
+                "issues": "https://github.com/hyperf/hyperf/issues",
+                "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                "source": "https://github.com/hyperf/hyperf"
+            },
+            "time": "2021-12-18T04:01:27+00:00"
         },
         {
             "name": "hyperf/translation",

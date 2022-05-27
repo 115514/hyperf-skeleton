@@ -6,7 +6,7 @@ namespace App\Request;
 
 use Hyperf\Validation\Request\FormRequest;
 
-class Index extends FormRequest
+class Method extends FormRequest
 {
     public function authorize(): bool
     {
@@ -19,6 +19,7 @@ class Index extends FormRequest
             'name' => ['required', 'string'],
         ];
     }
+
     public function attributes(): array
     {
         return [
